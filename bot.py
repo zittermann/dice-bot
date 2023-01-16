@@ -32,8 +32,8 @@ def run_bot():
 
 		user_message = str(message.content)
 		
-		if user_message[0] == '!':
-			user_message = user_message[1:]
+		if '!' in user_message:
+			# user_message = user_message[1:]
 			await send_message(message, user_message)
 
 	client.run(os.getenv('TOKEN'))
