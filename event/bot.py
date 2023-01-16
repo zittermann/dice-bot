@@ -28,13 +28,13 @@ def run_bot():
 	@client.event
 	async def on_message(message):
 
+		# Prevents infinite loops
 		if message.author == client.user:
 			return  
 
 		user_message = str(message.content)
 		
 		if '!' in user_message:
-			# user_message = user_message[1:]
 			await send_message(message, user_message)
 
 	client.run(os.getenv('TOKEN'))
