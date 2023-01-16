@@ -4,7 +4,7 @@ def handle_response(message) -> str:
 
 	p_message = message.lower().split(' ')
 
-	if p_message[0] == 'dado':
+	if p_message[0] == 'dado' or p_message[0] == 'reroll':
 		random_number = str(random.randint(0, 99))
 		return f':game_die: = {random_number}'
 
