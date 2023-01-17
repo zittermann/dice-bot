@@ -1,4 +1,4 @@
-from event import bot
+from events import bot
 import script
 from database.connection import create_connection
 
