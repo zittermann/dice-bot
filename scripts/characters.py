@@ -14,3 +14,6 @@ def load_character(db, pic, count):
 	source = " ".join(source_info)
 	
 	db.characters.insert_one({"_id": count, "name": name, "source": source})
+
+def delete_all(collection):
+	collection.delete_many({})

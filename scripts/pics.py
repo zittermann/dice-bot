@@ -14,6 +14,9 @@ def load_pic(db, pic, directory, count):
 	file_id = fs.put(encoded_string, filename=filename)
 	db.pics.insert_one({"_id": count, "filename": filename, "file_id": file_id})
 
+def delete_all(collection):
+	collection.delete_many({})
+
 ######### GET AN IMAGE ##########
 
 # file = fs.find_one({"filename": "Mash_Kyrielight_Fate.jpeg"})

@@ -13,3 +13,6 @@ def run_script(db):
 
 		pics.load_pic(db=db, pic=pic, directory=DIRECTORY, count=total_docs)
 		characters.load_character(db=db, pic=pic, count=total_docs)
+
+	# pics.delete_all(collection=db.pics)
+	# characters.delete_all(collection=db.characters)
