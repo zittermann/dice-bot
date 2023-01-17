@@ -1,5 +1,5 @@
 import discord, os
-from event import responses
+from events import responses
 from dotenv import load_dotenv
 
 load_dotenv()
