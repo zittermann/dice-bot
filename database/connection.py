@@ -1,7 +1,7 @@
 from database.configuration import load
 from pymongo import MongoClient
 
-def create_connection() -> str:
+def create_connection():
 
 	# Get a map with config.yaml content
 	database = load()['Database']
