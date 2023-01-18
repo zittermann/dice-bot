@@ -1,5 +1,5 @@
 from events import bot
-import script
+import src.scripts.script as script
 from database.connection import create_connection
 
 DB = create_connection()
