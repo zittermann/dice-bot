@@ -9,3 +9,7 @@ def handle_response(message) -> str:
 
 	if '!dobles' in p_message:
 		return f':game_die: = {generate_number()}/{generate_number()}'
+
+
+
+
