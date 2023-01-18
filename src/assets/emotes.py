@@ -1,0 +1,7 @@
+CHEEMS = ':sunombreeraAdrian:'
+XD = ':xd:'
+POCHITA = ':pochita:'
+SMALL_DICK = ':smalldick:'
+RAGE = ':rage~1:'
+HONRY = ':osopedroso'
+KEK = ':kek:'
