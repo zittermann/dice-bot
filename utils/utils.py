@@ -1,4 +1,5 @@
 import random
+from datetime import datetime
 
 def generate_number() -> str:
 	
@@ -8,3 +9,6 @@ def generate_number() -> str:
 		return f'0{random_number}' 
 
 	return random_number
+
+def today():
+	return datetime.now().strftime('%Y-%m-%d')
