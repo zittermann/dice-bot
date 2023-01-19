@@ -10,6 +10,7 @@ def create(db, username):
 	collection = db.users
 	total_users = collection.count_documents({})
 
+	# I refuse using classes a for this bitch ass project 
 	new_user = {
 		"_id": total_users,
 		"username": username,
@@ -20,10 +21,12 @@ def create(db, username):
 
 	collection.insert_one(new_user)
 
+	return new_user
+
 def update(db, updated_user):
 
 	collection = db.users
 
 	collection.find_one_and_update({
-		"_id": updated_user["_id"]
-	}, updated_user)	
+		"username": updated_user["username"]
+	}, {"$set": updated_user})	
