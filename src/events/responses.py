@@ -45,7 +45,12 @@ def handle_came(user_info, mention):
 	'''nadie verte por acá otra vez.\n'''
 	f'''Te recuerdo que tu mayor record de tremendas pajas consecutivas es de {record_emotes}. ''')
 
-	if record > sequence:
+
+	if sequence == 1:
+		message += (f'''\nEsta también es inicio de tu nueva vida como coomer promedio. Así es como comienza tu meteórica carrea hacia '''
+		f'''el fracaso del coomer promedio {e.OK_ZOOMER}''')
+
+	elif record > sequence:
 		message += (f'''Pero como sos incapaz de mantener la constancia en algo'''
 		f'''hasta ahora llevás {sequence_emotes} y contando. {e.NO_IDEA}''')
 
@@ -54,9 +59,6 @@ def handle_came(user_info, mention):
 		f'''también es la cantidad de pajas llevás consecutivas hasta ahora {e.PEKO}. '''
 		f'''Sigue así, negro, total la adicción a la pornografía es un mito {e.COOMER}''')
 
-	elif sequence == 1:
-		message += (f'''\nEsta también es inicio de tu nueva vida como coomer promedio. Así es como comienza tu meteórica carrea hacia '''
-		f'''el fracaso del coomer promedio {e.OK_ZOOMER}''')
 
 	else:
 		message = f"Cómo hiciste eso? {e.POCHITA}"
