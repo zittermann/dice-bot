@@ -6,9 +6,12 @@ load_dotenv()
 
 async def send_message(message, user_message):
 	
+	author = str(message.author).split("#")[0]
+	mention = message.author.mention
+
 	try:
 
-		response = responses.handle_response(user_message)
+		response = responses.handle_response(username=author, message=user_message, mention=mention)
 
 		await message.reply(response)
 
