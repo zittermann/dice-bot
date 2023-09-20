@@ -1,8 +1,6 @@
-import discord, os
+import discord
 from events import responses
-from dotenv import load_dotenv
-
-load_dotenv()
+from config.configuration import get_token
 
 async def send_message(message, user_message):
 	
@@ -40,4 +38,4 @@ def run_bot():
 		if '!' in user_message:
 			await send_message(message, user_message)
 
-	client.run(os.getenv('TOKEN'))
+	client.run(get_token())

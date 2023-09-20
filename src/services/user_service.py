@@ -1,8 +1,7 @@
 from repositories import user_repository as users
 from utils import utils
-from database.connection import create_connection
+from config.connection import create_connection
 from assets import emotes as e
-import discord
 
 FORMAT = '%Y-%m-%d'
 DB = create_connection()

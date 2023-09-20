@@ -1,4 +1,4 @@
-from database.configuration import load
+from config.configuration import load
 from pymongo import MongoClient
 
 def create_connection():

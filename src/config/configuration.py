@@ -6,3 +6,6 @@ def load():
 	dict = yaml.full_load(stream)
 
 	return dict
+
+def get_token():
+	return load()['TOKEN']
