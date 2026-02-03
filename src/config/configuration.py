@@ -1,4 +1,5 @@
-import yaml
+from dotenv import load_dotenv
+import os
 
 def load():
 
@@ -8,4 +9,5 @@ def load():
 	return dict
 
 def get_token():
-	return load()['TOKEN']
+	load_dotenv()
+	return os.getenv("DISCORD_TOKEN")
